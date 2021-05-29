@@ -1,0 +1,28 @@
+{
+  "name": "typescript-nodejs-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a TypeScript library",
+  "author": "Chris Hager <chris@linuxuser.at>",
+  "repository": "https://github.com/metachris/typescript-nodejs-boilerplate",
+  "license": "MIT",
+  "main": "./build/main.js",
+  "types": "./build/main.d.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "test": "jest",
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.9",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.2.3"
+  }
+}
